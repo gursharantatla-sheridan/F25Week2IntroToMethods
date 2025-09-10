@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "F25Week2IntroToMethods", "F25Week2IntroToMethods\F25Week2IntroToMethods.csproj", "{30A13EDE-3F65-4380-BE28-FD98DF20D16C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToEnums", "IntroToEnums\IntroToEnums.csproj", "{1F7678EF-C45E-43FD-AFCA-3F9280D9F958}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{30A13EDE-3F65-4380-BE28-FD98DF20D16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30A13EDE-3F65-4380-BE28-FD98DF20D16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30A13EDE-3F65-4380-BE28-FD98DF20D16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F7678EF-C45E-43FD-AFCA-3F9280D9F958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7678EF-C45E-43FD-AFCA-3F9280D9F958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7678EF-C45E-43FD-AFCA-3F9280D9F958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7678EF-C45E-43FD-AFCA-3F9280D9F958}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
