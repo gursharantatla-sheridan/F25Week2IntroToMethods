@@ -36,12 +36,55 @@
             Console.WriteLine("\n\n\n");
 
 
-            Console.Write("Enter a number: ");
-            if (int.TryParse(Console.ReadLine(), out int num))
-                Console.WriteLine("\nnum = " + num);
-            else
-                Console.WriteLine("Invalid input. Please try again");
+            // TryParse example
+            //Console.Write("Enter a number: ");
+            //if (int.TryParse(Console.ReadLine(), out int num))
+            //    Console.WriteLine("\nnum = " + num);
+            //else
+            //    Console.WriteLine("Invalid input. Please try again");
+
+
+            int x = 3, y = 5, z = 6;
+            Console.WriteLine("x = " + x + " y = " + y + " z = " + z);
+            Console.WriteLine($"x = {x} y = {y} z = {z}");
+            Console.WriteLine("x = {0} y = {1} z = {2}", x, y, z);
+
+
+            int[] array = { 6, 2, 4, 5, 6, 7, 6, 45, 43 };
+
+            PrintArray(array);
+            PrintArray(4, 5, 6, 6, 7, 7, 6, 5, 4, 4, 3, 3);
+
+
+            string str = "hello, ";
+            str = str.TrimEnd(' ', ',');
+
+
+            PersonInfo("John", 34);
+            PersonInfo(name: "John", age: 34);
+            PersonInfo(age: 34, name: "John");
+            //PersonInfo(43, "John");
+            PersonInfo("John");
         }
+
+
+        static void PersonInfo(string name, int age = 21)
+        {
+            // method body
+        }
+
+        static void PrintArray(params int[] arr)
+        {
+            Console.WriteLine("\n\nNumber of items = " + arr.Length);
+
+            foreach (int i in arr)
+            {
+                Console.Write(i + " ");
+            }
+            Console.WriteLine();
+        }
+
+
 
         static void Calculate(int r, out double cir, out double ar)
         {
