@@ -26,12 +26,21 @@
 
 
             int rad = 5;
-            double circum, area;
+            //double circum, area;
 
-            Calculate(rad, out circum, out area);
+            Calculate(rad, out double circum, out double area);
 
-            Console.WriteLine("Circumference = " + circum);
-            Console.WriteLine("Area = " + area);
+            Console.WriteLine("Circumference = " + circum.ToString("F"));
+            Console.WriteLine("Area = " + area.ToString("F"));
+
+            Console.WriteLine("\n\n\n");
+
+
+            Console.Write("Enter a number: ");
+            if (int.TryParse(Console.ReadLine(), out int num))
+                Console.WriteLine("\nnum = " + num);
+            else
+                Console.WriteLine("Invalid input. Please try again");
         }
 
         static void Calculate(int r, out double cir, out double ar)
